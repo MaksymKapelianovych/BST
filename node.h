@@ -5,14 +5,18 @@
 
 class Node{
 public:
-    Node *parent = nullptr, *left = nullptr, *right = nullptr;
+    Node *parent, *left, *right;
     Color color;
     int value;
 
     Node(int v, Node* p);
+    ~Node();
 
     Node *grandparent();
     Node *uncle();
+
+private:
+
 };
 
 

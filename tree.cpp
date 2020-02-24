@@ -2,6 +2,10 @@
 #include "node.h"
 #include "color.h"
 #include <iostream>
+Tree::Tree():root(nullptr){}
+Tree::~Tree(){
+    delete root;
+}
 
 void Tree::rotate_left(Node *n)
 {

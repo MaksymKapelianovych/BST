@@ -1,5 +1,10 @@
 #include "node.h"
 Node::Node(int v, Node *p):value(v), parent(p), color(RED), left(nullptr), right(nullptr){}
+Node::~Node()
+{
+    delete left;
+    delete right;
+}
 
 Node* Node::grandparent()
 {

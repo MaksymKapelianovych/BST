@@ -15,6 +15,5 @@ int main()
     }
 
     t.print(t.root);
-    cout << endl << t.root->value;
     return 0;
 }

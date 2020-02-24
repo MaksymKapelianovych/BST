@@ -4,7 +4,9 @@ class Node;
 
 class Tree{
 public:
-    Node *root = nullptr;
+    Node *root;
+    Tree();
+    ~Tree();
     void insert(int v);
     void print(Node *n);
 private:
@@ -16,5 +18,6 @@ private:
 
     void rotate_left(Node *n);
     void rotate_right(Node *n);
+
 };
 #endif // TREE_H
